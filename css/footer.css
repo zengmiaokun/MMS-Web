@@ -1,0 +1,35 @@
+.footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background: url("../images/footbg.jpg") no-repeat top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.footer .info,
+.info a {
+    color: aliceblue;
+}
+
+.footer ul {
+    list-style-type: none
+}
+
+.friend img {
+    height: 130px;
+    width: 130px;
+}
+
+.footer .friend .dropup button {
+    background: #d7d7d7;
+    color: #222222;
+    border: 0;
+    margin: 2px;
+    border-radius: 0;
+}
+
+.friend .dropup * {
+    width: 230px;
+    padding-left: 3px;
+    border-radius: 0;
+}
