@@ -3,6 +3,10 @@
 
 /* 轮播图 */
 
+.carousel-inner img {
+    width: 100%;
+}
+
 
 /* 新闻 */
 

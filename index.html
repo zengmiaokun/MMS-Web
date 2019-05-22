@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="MMS,医管院,同济医学院,华中科技大学,医药卫生管理学院,HUST,TJMU">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <title>医药卫生管理学院</title>
 </head>
 
@@ -18,7 +21,45 @@
         <div></div>
     </div>
     <!-- 轮播图 -->
-    <div class="banner container-fluid"></div>
+    <div id="news-banner" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#news-banner" data-slide-to="0" class="active"></li>
+            <li data-target="#news-banner" data-slide-to="1"></li>
+            <li data-target="#news-banner" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/banner_demo.jpg">
+                <div class="carousel-caption">
+                    <h3>第一张图片描述标题</h3>
+                    <p>描述文字!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner_demo.jpg">
+                <div class="carousel-caption">
+                    <h3>第二张图片描述标题</h3>
+                    <p>描述文字!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner_demo.jpg">
+                <div class="carousel-caption">
+                    <h3>第三张图片描述标题</h3>
+                    <p>描述文字!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 左右切换按钮 -->
+        <a class="carousel-control-prev" href="#news-banner" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#news-banner" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
     <!-- 主体部分 -->
     <div class="main container">
         <!-- 板块 -->
