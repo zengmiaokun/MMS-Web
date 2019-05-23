@@ -3,12 +3,16 @@
 
 /* 轮播图 */
 
-.carousel-inner img {
+#main-banner .carousel-inner img {
     width: 100%;
 }
 
 
 /* 新闻 */
+
+.news-banner .carousel-item img {
+    height: 300px;
+}
 
 
 /* 通知 */
