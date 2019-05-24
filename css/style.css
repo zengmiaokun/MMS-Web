@@ -1,5 +1,10 @@
 @import url("nav.css");
 @import url("footer.css");
+a,
+a:hover {
+    text-decoration: none;
+}
+
 
 /* 轮播图 */
 
@@ -8,7 +13,50 @@
 }
 
 
+/* 主要内容 */
+
+.main {
+    margin-top: 2rem;
+}
+
+
 /* 新闻 */
+
+.n-title {
+    border-bottom: 2px solid #1D8BCC;
+    justify-content: space-between;
+}
+
+.n-title a {
+    text-decoration: none;
+}
+
+.n-title a>h1 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #555;
+}
+
+.n-title span {
+    font-size: 13px;
+    color: #666666;
+}
+
+.news .main-news h2 {
+    color: #454545;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.new .main-news p {
+    color: #555;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    text-indent: 22px;
+    border-bottom: 1px solid #cccccc;
+}
 
 .news-banner .carousel-item img {
     height: 300px;
