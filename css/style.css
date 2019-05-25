@@ -1,4 +1,5 @@
 @import url("nav.css");
+@import url("../swiper/css/swiper.min.css");
 @import url("footer.css");
 a,
 a:hover {
@@ -8,6 +9,11 @@ a:hover {
 
 /* 轮播图 */
 
+#main-banner {
+    max-width: 1366px;
+    margin: auto;
+}
+
 #main-banner .carousel-inner img {
     width: 100%;
 }
@@ -15,42 +21,54 @@ a:hover {
 
 /* 主要内容 */
 
-.main {
+.main>.row>* {
     margin-top: 2rem;
 }
 
 
 /* 新闻 */
 
-.n-title {
+.n-title,
+.panel-head {
     border-bottom: 2px solid #1D8BCC;
-    justify-content: space-between;
+    margin-bottom: 1.2rem;
 }
 
 .n-title a {
+    justify-content: space-between;
     text-decoration: none;
 }
 
 .n-title a>h1 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
     color: #555;
 }
 
 .n-title span {
-    font-size: 13px;
-    color: #666666;
+    font-size: 16px;
+    color: #666;
 }
 
-.news .main-news h2 {
+.news .news-banner {
+    padding-bottom: 1rem;
+}
+
+.news-banner .carousel-item img {
+    height: 300px;
+}
+
+.news .main-news h2,
+.panel .panel-main-item h2 {
     color: #454545;
     font-size: 16px;
     font-weight: 600;
 }
 
-.new .main-news p {
+.news .main-news p,
+.panel .panel-main-item p {
     color: #555;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 23px;
     margin: 10px 0;
     padding-bottom: 10px;
@@ -58,21 +76,197 @@ a:hover {
     border-bottom: 1px solid #cccccc;
 }
 
-.news-banner .carousel-item img {
-    height: 300px;
+.news .news-list ul,
+.panel .panel-title-list ul {
+    padding: 0.2rem 0 0 0;
+}
+
+.news .news-item,
+.panel .panel-title-item {
+    margin: 0.6rem 0;
+    justify-content: space-between;
+}
+
+.news .news-item a>h3,
+.news .news-item span,
+.notice .notice-item a>h3,
+.panel .panel-title-item a>h3,
+.panel .panel-title-item span,
+.column .column-item a {
+    font-size: 15px;
+    color: #555;
 }
 
 
 /* 通知 */
 
+.notice ul {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+.notice .notice-item {
+    margin: 1rem 0;
+    ;
+}
+
+.notice .notice-item-date {
+    width: 52px;
+    text-align: center;
+    background: #1D8BCC;
+    border-radius: 5px;
+    border: 1px solid #1D8BCC;
+    font-size: 12px;
+    color: #fff;
+}
+
+.notice .notice-item-date .year {
+    margin-top: 2px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    color: #111;
+}
+
+.notice .notice-item a>h3 {
+    padding-left: 1rem;
+    display: inline-block;
+}
+
+.notice .notice-item.notice-top a>h3 {
+    font-weight: bold;
+}
+
 
 /* 板块 */
+
+.panel {
+    margin-top: 2rem;
+}
+
+.panel-head {
+    /* padding-bottom: 1rem; */
+    padding-bottom: 0.3rem;
+    padding-top: 0.7rem;
+}
+
+.panel-head h1.zh-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.panel-head h1.en-head {
+    margin-left: 0.5rem;
+    font-size: 16px;
+    font-weight: normal;
+    color: #c4c4c4;
+}
+
+.panel .panel-main-item p {
+    border: none;
+}
+
+.panel .panel-title-list {
+    border-bottom: 2px solid rgba(29, 139, 204, 0.4);
+    margin-bottom: 0.5rem;
+}
+
+.panel .continue {
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 
 /* 滚动照片墙 */
 
+.photo-wall {
+    margin-top: 2rem;
+}
+
 
 /* 常用链接 */
 
+.panel .web-nav-lable {
+    border-left: 0.3rem solid #1D8BCC;
+    padding-left: 1rem;
+    background: rgba(29, 139, 204, 0.05);
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.panel .web-nav-list {
+    padding-left: 1.3rem;
+}
+
+.panel .web-nav-item {
+    display: inline-block;
+    padding: 0.3rem;
+    width: calc(50% - 0.6rem);
+}
+
+.panel .web-nav-item a {
+    color: #555;
+}
+
 
 /* 专栏 */
+
+.column .panel-head {
+    background: #1D8BCC;
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-bottom: 0;
+}
+
+.column .panel-head .zh-head {
+    color: #FFF;
+}
+
+.column .panel-head .en-head {
+    color: #EEE;
+}
+
+.column .column-list {
+    border-radius: 0 0 0.5rem 0.5rem;
+    border: 1px solid #1D8BCC;
+}
+
+.column .column-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.column .column-item a {
+    padding-left: 0.5rem;
+}
+
+.column .column-item {
+    font-size: 17px;
+    border-bottom: 1px solid #ddd;
+    padding: 0.4rem;
+}
+
+
+/* 回到顶部 */
+
+#goToTop {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 2rem;
+}
+
+#goToTop .icon {
+    font-size: 56px;
+    color: #1d8bcc;
+}
+
+#goToTop a:hover {
+    color: #1d8bcc;
+    text-decoration: none;
+}
+
+#goToTop a:focus {
+    color: #1d8bcc;
+    text-decoration: none;
+}
