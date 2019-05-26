@@ -12,7 +12,7 @@
 /* 顶部导航 */
 
 .top-nav {
-    height: 50px;
+    height: 150px;
     background: #046FAE;
     justify-content: space-between;
 }
@@ -28,6 +28,14 @@
 
 .top-nav .navbar-brand {
     padding-left: 1rem;
+}
+
+.top-nav .navbar-brand img {
+    height: 160px;
+}
+
+.top-nav .top-nav-right {
+    height: 100px;
 }
 
 @media (max-width:768px) {
