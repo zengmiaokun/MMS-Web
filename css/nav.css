@@ -34,8 +34,12 @@
     height: 160px;
 }
 
+.top-nav span.nav-link {
+    color: #FFF;
+}
+
 .top-nav .top-nav-right {
-    height: 100px;
+    height: 150px;
 }
 
 @media (max-width:768px) {
@@ -54,6 +58,7 @@
 }
 
 .lg-search {
+    margin-top: 1.8rem;
     height: 30px;
 }
 
