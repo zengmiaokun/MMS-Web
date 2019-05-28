@@ -30,6 +30,15 @@
 
 .friend .dropup * {
     width: 230px;
-    padding-left: 3px;
     border-radius: 0;
+}
+
+.friend .dropup li:hover {
+    background: #1d8bcc;
+    padding: .2rem;
+}
+
+.friend .dropup a {
+    padding: 1.5rem 1rem;
+    color: black;
 }
