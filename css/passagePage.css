@@ -1,0 +1,241 @@
+body {
+    /*padding-top: 112px;*/
+    /*position: relative;*/
+    background-color: #F9F9F9;
+}
+
+.main-passage-style {
+    font-size: 0.8rem;
+}
+
+.breadcrumb {
+    padding-left: 8rem;
+}
+
+.main-page {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.titlefont {
+    color: white;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+
+/* 二级目录 左侧栏*/
+
+.left-div .list-group:first-child {
+    margin-top: 1rem;
+}
+
+.left-div .list-group:last-child {
+    margin-top: 2rem;
+}
+
+.left-div .list-group label {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .left-div {
+        display: none;
+    }
+    .breadcrumb {
+        padding-left: 1rem;
+    }
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .main-page {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+/*以下代码已经添加到nav中
+#Shouye{
+    font-size: 23px;
+    color: white;
+    position: absolute;
+    left: 55px;
+    top: 65px;
+    z-index: -1;
+}
+.iconHome{
+    transition: opacity 0.75s;
+    -webkit-transition: opacity 0.75s;
+    -moz-transition:width 2s;
+    -moz-transition-timing-function:linear;
+}
+.iconHome:hover{
+    opacity: 0.1;
+}
+
+.iconHome img{
+    height: 100%;
+}
+*/
+
+.passageDiv {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+#passage h2 {
+    margin-top: 10px;
+}
+
+.mTitle {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.paragraph {
+    padding-top: 20px;
+    font-size: 12pt;
+    line-height: 160%;
+    text-align: justify;
+    text-indent: 2em;
+    letter-spacing: 1px;
+}
+
+.ParaImage {
+    text-align: center;
+    margin: 0px；
+}
+
+.ParaImage img {
+    width: 80%;
+    max-height: 300px;
+    border-radius: 5px;
+}
+
+.littleTitle {
+    font-family: 微软雅黑;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+.fuJian {
+    margin-top: 30px;
+}
+
+.fuJian a:hover {
+    font-size: 17px;
+}
+
+.fuJian-item {
+    display: block;
+    margin-left: 30px;
+    font-size: 15px;
+    transition: font-size 0.3s;
+    -webkit-transition: font-size 0.3s;
+}
+
+.zhuanLanBorder {
+    border: 1px solid;
+    border-image: -webkit-linear-gradient(#F9F9F9, deepskyblue, #F9F9F9);
+    border-image: -moz-linear-gradient(#F9F9F9, deepskyblue, #F9F9F9);
+    border-image: -o-linear-gradient(#F9F9F9, deepskyblue, #F9F9F9);
+    border-image: linear-gradient(#F9F9F9, deepskyblue, #F9F9F9) 5 90 5;
+}
+
+.zhuanLanBorder a {
+    color: #5b6b73;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+}
+
+.zhuanLanBorder a:hover {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+    transition-duration: 0.3s;
+    background-color: #2e6da4;
+    color: white;
+}
+
+.line {
+    height: 2px;
+    background: linear-gradient(to left, #F9F9F9, deepskyblue, #F9F9F9);
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.table {
+    border-top: 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table td,
+tr {
+    border-top: 0px!important;
+    border-bottom: 1px solid #ddd;
+    font-size: 11pt;
+}
+
+.table a {
+    color: black;
+    -webkit-transition: font-size 0.2s;
+    /*-moz-transition: padding 0.5s;*/
+}
+
+.table a:hover {
+    font-size: 12pt;
+}
+
+.title-left {
+    float: left;
+}
+
+.date-right {
+    float: right;
+}
+
+.panel {
+    margin-bottom: 10px;
+}
+
+.panel-footer {
+    background-color: #2e6da4;
+    /*padding: 10px;*/
+}
+
+
+/*回到顶部*/
+
+#goToTop {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 2%;
+}
+
+#goToTop .icon-zhiding {
+    font-size: 56px;
+    color: #1d8bcc;
+}
+
+#goToTop a:hover {
+    color: #1d8bcc;
+    text-decoration: none;
+}
+
+#goToTop a:focus {
+    color: #1d8bcc;
+    text-decoration: none;
+}
+
+.panel-footer {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
