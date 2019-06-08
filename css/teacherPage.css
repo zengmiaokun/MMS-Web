@@ -1,0 +1,397 @@
+body {
+    /*padding-top: 112px;*/
+    /*position: relative;*/
+    background-color: #F9F9F9;
+}
+
+
+/*教师综合页面css*/
+
+.titlefont {
+    color: white;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.breadcrumb {
+    padding-left: 8rem;
+}
+
+.main-passage-style {
+    font-size: 0.8rem;
+}
+
+.main-page {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .left-div {
+        display: none;
+    }
+    .breadcrumb {
+        padding-left: 1rem;
+    }
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .main-page {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+/*
+#Shouye{
+    font-size: 23px;
+    color: white;
+    position: absolute;
+    left: 55px;
+    top: 65px;
+    z-index: -1;
+}
+.iconHome{
+    transition: opacity 0.75s;
+    -webkit-transition: opacity 0.75s;
+    -moz-transition:width 2s;
+    -moz-transition-timing-function:linear;
+}
+.iconHome:hover{
+    opacity: 0.1;
+}
+*/
+
+.passageDiv {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+#passage h2 {
+    margin-top: 10px;
+}
+
+.zhuanLanBorder {
+    border: 1px solid;
+    border-image: -webkit-linear-gradient(#F9F9F9, deepskyblue, #F9F9F9);
+    border-image: -moz-linear-gradient(#F9F9F9, deepskyblue, #F9F9F9);
+    border-image: -o-linear-gradient(#F9F9F9, deepskyblue, #F9F9F9);
+    border-image: linear-gradient(#F9F9F9, deepskyblue, #F9F9F9) 5 90 5;
+}
+
+.zhuanLanBorder a {
+    color: #5b6b73;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+}
+
+.zhuanLanBorder a:hover {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+    transition-duration: 0.3s;
+    background-color: #1088cc;
+    color: white;
+}
+
+.button-div {
+    margin-bottom: 1rem;
+}
+
+.my-button {
+    color: black;
+    background-color: whitesmoke;
+    border-color: #0069d9;
+}
+
+.my-button:focus {
+    outline: 0px;
+}
+
+.my-button-actived {
+    color: white;
+    background-color: #0069d9;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+#xibie {
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+#zhicheng {
+    padding-left: 4rem;
+    font-size: 0.8rem;
+}
+
+.line {
+    height: 2px;
+    background: linear-gradient(to left, #F9F9F9, deepskyblue, #F9F9F9);
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.teacherTitle {
+    font-size: 23px;
+    font-family: "微软雅黑 Light";
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
+
+.teacher-item {
+    padding: 0px;
+}
+
+.teacher-block {
+    margin-right: 0px;
+    margin-left: 2.3rem;
+}
+
+
+/* 二级目录 左侧栏*/
+
+.left-div .list-group:first-child {
+    margin-top: 1rem;
+}
+
+.left-div .list-group:last-child {
+    margin-top: 2rem;
+}
+
+.left-div .list-group label {
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .teacher-block {
+        margin-right: 0px;
+        margin-left: 1rem;
+    }
+}
+
+.zhaopian {
+    margin: 0px;
+    margin-right: 5%;
+    padding: 0px;
+    width: auto;
+}
+
+.zhaopian img {
+    height: 180px;
+    width: 150px;
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+
+.tea-img:hover {
+    -webkit-transform: scale(1, 1);
+}
+
+.tea-name {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.teacher-list-group {
+    list-style: none outside none;
+    padding: 0px;
+}
+
+.teacher-list-group-item,
+.teacher-list-group-item2 {
+    background: #f8f5f2;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.teacher-list-group-item2 {
+    background: #eeebe8;
+}
+
+.teacher-list-group-item h4 {
+    margin-bottom: 12px;
+}
+
+.teacher-list-group-item2 h4 {
+    margin-bottom: 12px;
+}
+
+.teacher-info {
+    float: left;
+    margin-top: 10px;
+    /*box-sizing: border-box;*/
+    width: 70%;
+}
+
+.dl-horizontal dt {
+    width: 100px;
+}
+
+.dl-horizontal dd {
+    margin-left: 120px;
+}
+
+.teacher-info-item {
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+.teacher-link {
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+
+.teacher-link:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.teacher-link:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*教师个人页面css*/
+
+.affixd-element-bottom {
+    position: fixed;
+    bottom: 75px;
+    right: 10%;
+}
+
+.page-section {
+    padding-top: 80px;
+    /*margin-top: -80px;*/
+}
+
+.mTitle {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.paragraph {
+    padding-top: 20px;
+    font-size: 12pt;
+    line-height: 160%;
+    text-align: justify;
+    text-indent: 2em;
+    letter-spacing: 1px;
+}
+
+.ParaImage {
+    text-align: center;
+    margin: 0px；
+}
+
+.ParaImage img {
+    width: 60%;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.littleTitle {
+    font-family: 微软雅黑;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+.underLine-title {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 3px;
+    padding-top: 10px;
+    font-size: 12pt;
+    border-bottom: 2px solid #2aabd2;
+    letter-spacing: 2px;
+}
+
+.rewardList {
+    font-size: 12pt;
+    line-height: 160%;
+}
+
+.rewardList li {
+    padding-bottom: 5px;
+}
+
+.underLine {
+    background: linear-gradient(to left, #F9F9F9, #9acfea, #F9F9F9);
+    padding: 3px 3px 3px 3px;
+    width: 25%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+
+/*回到顶部*/
+
+#goToTop {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 2%;
+}
+
+#goToTop .icon-zhiding {
+    font-size: 56px;
+    color: #1d8bcc;
+}
+
+#goToTop a:hover {
+    color: #1d8bcc;
+    text-decoration: none;
+}
+
+#goToTop a:focus {
+    color: #1d8bcc;
+    text-decoration: none;
+}
+
+.panel-footer {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+/*页脚*/
+
+.panel {
+    margin-bottom: 10px;
+}
+
+.panel-footer {
+    background-color: #2e6da4;
+    /*padding: 10px;*/
+}
+
+
+/* 选择按钮 */
+
+#xuanzekuang button {
+    border-color: #046FAE;
+    outline: none;
+}
+
+#xuanzekuang button:hover {
+    background-color: #1088cc;
+}
+
+#xuanzekuang button:disabled {
+    opacity: 1;
+}
+
+#xuanzekuang button.my-button-actived {
+    background-color: #046FAE;
+}

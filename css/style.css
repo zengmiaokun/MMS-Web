@@ -14,7 +14,6 @@ a:hover {
     margin: auto;
 }
 
-
 #main-banner .carousel-inner img {
     width: 100%;
 }
@@ -35,12 +34,12 @@ a:hover {
     margin-bottom: 1.2rem;
 }
 
-.n-title a {
+.n-title>div {
     justify-content: space-between;
     text-decoration: none;
 }
 
-.n-title a>h1 {
+.n-title>div>h1 {
     font-size: 20px;
     font-weight: 600;
     color: #555;
@@ -201,6 +200,7 @@ a:hover {
 }
 
 .panel .web-nav-item {
+    vertical-align: top;
     display: inline-block;
     padding: 0.3rem;
     width: calc(50% - 0.6rem);
